@@ -1,0 +1,39 @@
+.video-uploader {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 20px 0;
+}
+
+.video-input {
+  margin-left: 10px;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  transition: all 0.3s ease;
+  width: 100%;
+  max-width: 400px;
+}
+
+.video-input:focus {
+  border-color: #007bff;
+  box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
+}
+.video-player {
+  position: relative;
+}
+
+.caption {
+  position: absolute;
+  bottom: 10px;
+  left: 50%;
+  transform: translateX(-50%);
+  color: white;
+  padding: 5px 10px;
+  border-radius: 3px;
+  max-width: calc(100% - 20px);
+  white-space: normal;
+  overflow: visible;
+  pointer-events: none; /* Ensures the caption does not block interactions with controls */
+  background-color: transparent; /* Removes background color */
+}
